@@ -1,4 +1,4 @@
-# Import necessary libraries.
+# Import necessary libraries
 
 from sklearn import preprocessing
 from sklearn.naive_bayes import GaussianNB, MultinomialNB
