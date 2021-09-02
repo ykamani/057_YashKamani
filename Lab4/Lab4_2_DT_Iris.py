@@ -50,18 +50,18 @@ print(y_predicted.dtype)
 accuracy = metrics.accuracy_score(y_test, y_predicted)
 print("Accuracy:",accuracy)
 
-from sklearn.tree import export_graphviz
-export_graphviz(dtc,out_file='iris_tree.dot',feature_names=list(iris.feature_names),
-                class_names=list(iris.target_names), filled=True)
+# from sklearn.tree import export_graphviz
+# export_graphviz(dtc,out_file='iris_tree.dot',feature_names=list(iris.feature_names),
+#                 class_names=list(iris.target_names), filled=True)
 
-# Convert to png
-from subprocess import call
-call(['dot', '-Tpng', 'iris_tree.dot', '-o', 'iris_tree.png', '-Gdpi=600'])
+# # Convert to png
+# from subprocess import call
+# call(['dot', '-Tpng', 'iris_tree.dot', '-o', 'iris_tree.png', '-Gdpi=600'])
 
-# Display in python
-import matplotlib.pyplot as plt
-plt.figure(figsize = (14, 18))
-plt.imshow(plt.imread('iris_tree.png'))
-plt.axis('off')
-plt.show()
+# # Display in python
+# import matplotlib.pyplot as plt
+# plt.figure(figsize = (14, 18))
+# plt.imshow(plt.imread('iris_tree.png'))
+# plt.axis('off')
+# plt.show()
 
